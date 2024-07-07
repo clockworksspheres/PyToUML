@@ -34,6 +34,10 @@ def main():
             all_classes += classes
 
     desc_to_uml(all_classes, Path("./output/plantuml.txt"))
+    
+    #####
+    # no more os.startfile.... at least on macos, cross platform solution possible:
+    # https://stackoverflow.com/questions/17317219/is-there-an-platform-independent-equivalent-of-os-startfile
     os.startfile(Path("./output/plantuml.png"))
 
 
